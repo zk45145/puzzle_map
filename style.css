@@ -1,0 +1,130 @@
+body {
+  background-color: rgb(3, 3, 49);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: whitesmoke;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-item {
+  margin-left: 20px;
+}
+
+#map {
+  height: 560px;
+  width: 80%;
+  margin: auto;
+  border: 4px solid whitesmoke;
+  border-radius: 10px;
+  background-color: black;
+  padding: 10px;
+  overflow: hidden;
+  justify-content: space-between;
+  display: flex;
+  padding: 20px;
+}
+
+.piece {
+  width: 122px;
+  height: 122px;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.piece.over {
+  border: 3px dotted #666;
+}
+
+.placeToDrop {
+  width: 122px;
+  height: 122px;
+  cursor: pointer;
+  border: 1px solid white;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.placeToDrop.over {
+  border: 3px dotted #666;
+}
+.piecesColumn {
+  display: inline-block;
+}
+
+.dropColumn {
+  display: inline-block;
+}
+
+.piecesColumnGroup {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropColumnGroup {
+  width: 40%;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 32px;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 50px;
+  letter-spacing: 4px;
+}
+
+#actions {
+  text-align: center;
+  padding: 20px;
+}
+
+#status {
+  text-align: center;
+  font-size: 17px;
+}
+
+.btn-primary {
+  position: relative;
+  border: none;
+  font-size: 21px;
+  font-family: "Trebuchet MS";
+  color: whitesmoke;
+  padding: 4px;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn-primary:after {
+  content: "";
+  background: aqua;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.btn-primary:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
